@@ -5,25 +5,51 @@
  <meta name="viewport" content="width=device-width, initial-scale=1"/>
  <link rel="stylesheet" href="water_ripple.css" type="text/css">
  <title>首页</title>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
- <script src="hhh.js"></script>
  </head>
  <body>
+ <!-- 背景 -->
+ <div class="a">
+ 	
+ <!-- 鼠标点击特效 -->
+ <div>
+ 	<script src="click.js" defer></script>
+ </div>
+ 
+ <!-- 主标题与副标题 -->
  <div class="b">
  <p>Hello World!</p>
- <p>你好世界！</p>
+ <p>你好世界!</p>
  </div>
- <div class="avatar">
- </div>
+ 
+ <!-- 按钮 -->
  <div class="entiy">
  <p>开始您的旅程</p>
  </div>
- <script>
- $("body").ripples({
- resolution: 200,
- perturbance: 0.04,
- });
- </script>
+ 
+ <!-- 头像 -->
+ <div class="introduce">
+ <div class="img">
+ <img src="image/koloki.png" alt="koloki" width="80px" height="80px">
+ </div>
+ 
+ <!-- 介绍部分 -->
+ <div class="describe">
+ <h1>我是谁？</h1>
+ <p>我是一位来自遥远星系的旅客，到地球来旅行，编号20090317，英文名是koloki</p>
+ </div>
+ </div>
+ 
+ <!-- 音乐播放器 -->
+ <div class="mp3Box">
+ <audio preload autoplay loop id="background-music">
+ <source src="music/城南花已开.mp3" type="audio/mpeg">
+ </audio>
+ </div>
+ </div>
+ 
+ <!-- 底边栏 -->
+ <div class="footer">一个人</div>
+ 
+ <script src="hhh.js"></script>
  </body>
  </html>
